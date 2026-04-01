@@ -1,6 +1,6 @@
-# EduConnect
+# ClassFitAI
 
-EduConnect is a Hackathon project designed for course selection support:
+ClassFitAI is a Hackathon project designed for course selection support:
 
 - The frontend collects student learning preferences via a survey (lecture attendance, workload tolerance, exam confidence, question-asking habits, etc.).
 - The backend gathers instructor data and review content for a given course.
@@ -10,22 +10,21 @@ EduConnect is a Hackathon project designed for course selection support:
 ## Project Structure
 
 ```text
-educonnect-master/
-  backend/
-    main.py          # Flask API entrypoint
-    login.py         # Uses Selenium to fetch instructors from Northeastern Banner
-    ratemyprof.py    # Fetches RateMyProfessors comments
-    llm.py           # OpenAI calls and review structuring
-    Algorithm.py     # Compatibility scoring logic
-    Test.csv         # Sample test data
-  frontend/
-    index.html       # Static login page
-    landing.html     # Feature selection page
-    profrecs.html    # Professor recommendation survey page
-    class_schedule.html
-    profscripts.js   # Frontend interactions and API calls
-    style.css / styler.css / profstyles.css
-    vercel.json
+backend/
+  main.py          # Flask API entrypoint
+  login.py         # Uses Selenium to fetch instructors from Northeastern Banner
+  ratemyprof.py    # Fetches RateMyProfessors comments
+  llm.py           # OpenAI calls and review structuring
+  Algorithm.py     # Compatibility scoring logic
+  Test.csv         # Sample test data
+frontend/
+  index.html       # Static login page
+  landing.html     # Feature selection page
+  profrecs.html    # Professor recommendation survey page
+  class_schedule.html
+  profscripts.js   # Frontend interactions and API calls
+  style.css / styler.css / profstyles.css
+  vercel.json
 ```
 
 ## Tech Stack
